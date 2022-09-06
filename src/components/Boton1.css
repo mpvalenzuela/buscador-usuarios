@@ -1,0 +1,56 @@
+.fondo {
+    background-color: black;
+    
+}
+h1 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+li {
+    font-size: 15px;
+        color: white;
+}
+input {
+    text-align: center;
+}
+
+.eliminar {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    padding: 0.20em 1em;
+    margin-left: 540px;
+}
+.eliminar::hover{
+    background-color: red !important;
+}
+.buscar{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    padding: 0.20em 1em;  
+    position: relative;
+    
+}
+.linea {
+    border-top: 1px solid white;
+    max-width: 400px;
+    height: 9px;
+    padding: 25px;
+    margin: 18px auto 0 auto;
+}
