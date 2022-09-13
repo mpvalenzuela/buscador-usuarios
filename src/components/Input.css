@@ -1,0 +1,17 @@
+
+label{
+    font-size: 15px;
+        color: white;
+        align-content: center;
+        display: flex;
+        margin: 40px 20px 0px 540px;
+}
+input {
+    text-align: justify;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 0px 0px 640px;
+}

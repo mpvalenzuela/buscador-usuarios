@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./Boton1.css";
+import "./Formulario.css";
 import axios from "axios";
+import Boton from "./Boton";
+import Input from "./Input";
 
 const Formulario = () => {
   const [userList, setUserList] = useState([]);
@@ -10,12 +12,9 @@ const Formulario = () => {
     getUsuarios();
   }, []);
 
-  const handleChange = (e) => {
-    setId(e.target.value);
-    const hola = e.target.value;
-    console.log({ hola });
+  const deletePost = () => {
+    setUserList(null);
   };
-
   const handleClickBuscar = () => {
     if (id === null || id === "") {
       getUsuarios();
@@ -23,9 +22,8 @@ const Formulario = () => {
       getUsuario();
     }
   };
-
-  const deletePost = () => {
-    setUserList(null);
+  const handleChange = (e) => {
+    setId(e.target.value);
   };
 
   const getUsuarios = async () => {
@@ -65,18 +63,18 @@ const Formulario = () => {
             ))}
         </ul>
         <div>
-          <p> ID Usuario </p>
-          <input type="number" name="id" value={id} onChange={handleChange} />
-          <button
-            className="eliminar"
-            onClick={deletePost}
-            disabled={!userList ? true : false}
-          >
-            Borrar
-          </button>
-          <button className="buscar" onClick={() => handleClickBuscar()}>
-            Buscar
-          </button>
+          <Input 
+          handleChange={handleChange}
+          value={id}
+          />
+           <Boton 
+          onClick={deletePost}
+          disabled={!userList ? true : false}
+          />
+          <Boton 
+          onClick={handleClickBuscar}
+          nombreBoton="Buscar"
+          />
         </div>
       </div>
     </>

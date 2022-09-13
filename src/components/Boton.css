@@ -1,0 +1,29 @@
+.eliminar {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    width: 100px;
+    cursor: pointer;
+    padding: 0.20em 1em;
+    margin-left: 540px;
+    margin: 0px 60px 0px 500px;
+}
+
+.eliminar::hover {
+    background-color: red !important;
+}
+
+.buscar {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    padding: 0.20em 1em;
+    position: relative;
+    margin: 0px 0px  0px 0px;
+
+}
