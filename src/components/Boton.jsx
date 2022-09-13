@@ -3,12 +3,8 @@ import "./Boton.css";
 
 const Boton = ({onClick, nombreBoton="Borrar"}) => {
 
-let clase = "buscar" 
-if (nombreBoton === "Borrar" || nombreBoton === null) {
-  clase = "eliminar"
-}else{
-  clase = "buscar";
-}
+const clase = nombreBoton === "Borrar" ? "eliminar" : "buscar" 
+
 
   return (
     <>
